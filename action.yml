@@ -1,0 +1,8 @@
+name: "Ceedling unit tests runner"
+description: ""
+branding:
+  color: orange
+  icon: check-square
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
