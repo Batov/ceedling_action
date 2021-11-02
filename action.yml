@@ -1,7 +1,7 @@
-name: "Ceedling unit tests runner"
-description: ""
+name: "Ceedling unit tests action"
+description: "Runs `ceedling test:all` at your project"
 branding:
-  color: orange
+  color: green
   icon: check-square
 runs:
   using: 'docker'
