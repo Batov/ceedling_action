@@ -3,6 +3,11 @@ description: "Runs `ceedling test:all` at your project"
 branding:
   color: green
   icon: check-square
+inputs:
+  test_directory:
+    description: "path to the directory with ceedling tests inside the repository"
+    required: false
+    default: "./"
 runs:
   using: 'docker'
   image: 'Dockerfile'
