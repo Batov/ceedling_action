@@ -1,5 +1,5 @@
 name: "Ceedling unit tests action"
-description: "Runs `ceedling test:all` at your project"
+description: "Runs `ceedling` at your project"
 branding:
   color: green
   icon: check-square
@@ -8,6 +8,10 @@ inputs:
     description: "path to the directory with ceedling tests inside the repository"
     required: false
     default: "./"
+  arguments:
+    description: "ceedling arguments"
+    required: false
+    default: "test:all"
 runs:
   using: 'docker'
   image: 'Dockerfile'
