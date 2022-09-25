@@ -5,6 +5,7 @@ ARG DEBIAN_FRONTEND=nointeractive
 RUN apt-get update \
   && apt install -y -q \
   gcc \
+  gcovr \
   ruby
 
 RUN gem install ceedling
